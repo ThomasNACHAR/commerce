@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="items">
+        <div class="cube accueil" onclick="redirect('accueil')">
+            <div class="toit toit1">
+            </div>
+            <div class="toit toit2">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+        <div class="cube login" onclick="redirect('login')">
+            <div class="top">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+        <div class="cube produits" onclick="redirect('produits')">
+            <div class="top">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+        <div class="cube promotions" onclick="redirect('promotions')">
+            <div class="top">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+        <div class="cube meilleures" onclick="redirect('meilleures')">
+            <div class="top">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+        <div class="cube contact" onclick="redirect('contact')">
+            <div class="top">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+        <div class="cube categories">
+            <div class="top">
+            </div>
+            <div>
+                <span style="--i:0;"><div></div></span>
+                <span style="--i:1;"><div></div></span>
+                <span style="--i:2;"><div></div></span>
+                <span style="--i:3;"><div></div></span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirect(link) {
+            switch (link) {
+                case 'accueil': 
+                    window.location.href = 'accueil.html';
+                    break;
+                case 'login': 
+                    window.location.href = 'login.html';
+                    break;
+                case 'contact': 
+                    window.location.href = 'contact.html';
+                    break;
+                case 'produits': 
+                    window.location.href = 'produits.html';
+                    break;
+                case 'promotions': 
+                    window.location.href = 'promotions.html';
+                    break;
+                case 'meilleures': 
+                    window.location.href = 'meilleures.html';
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
